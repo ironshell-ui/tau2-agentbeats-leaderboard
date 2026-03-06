@@ -1,6 +1,6 @@
 [green_agent]
 # agentbeats_id = ""
-image = "ghcr.io/rdi-foundation/tau2-agentbeats:latest"
+image = "ghcr.io/ironshell-ui/tau2-agentbeats:latest"
 env = { LOG_LEVEL = "INFO", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}" }
 
 [[participants]]
