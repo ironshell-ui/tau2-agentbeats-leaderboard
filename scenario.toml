@@ -1,3 +1,4 @@
+# run: HARD DEBUG Monte Carlo v4.0 — 2026-03-06T19:00
 [green_agent]
 # agentbeats_id = ""
 image = "ghcr.io/ironshell-ui/tau2-agentbeats:latest"
