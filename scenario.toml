@@ -1,6 +1,6 @@
-# run: Tau2-bench v8 airline domain — 2026-03-07T15:40
+# run: Tau2-bench v9 json-tag format + multi-turn — 2026-03-07T15:55
 [green_agent]
-image = "ghcr.io/rdi-foundation/tau2-agentbeats:latest"
+image = "ghcr.io/ironshell-ui/tau2-agentbeats:latest"
 env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}" }
 
 [[participants]]
@@ -11,4 +11,4 @@ env = { LOG_LEVEL = "INFO", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_K
 [config]
 domain = "airline"
 user_llm = "openai/gpt-4o-mini"
-run_id = 8
+run_id = 9
