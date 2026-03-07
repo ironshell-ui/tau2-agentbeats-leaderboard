@@ -14,7 +14,6 @@ jobs:
     permissions:
       contents: write
       packages: read
-      workflows: write
 
     steps:
       - name: Checkout
@@ -106,6 +105,7 @@ jobs:
           git remote add upstream https://github.com/${{ steps.target.outputs.repo }}.git
           git fetch upstream
           git checkout -b ${{ steps.metadata.outputs.branch_name }} upstream/main
+          git rm -r --cached .github/ 2>/dev/null || true
 
       - name: Commit results
         run: |
@@ -114,7 +114,7 @@ jobs:
           git add submissions/${{ steps.metadata.outputs.unique_name }}.toml submissions/${{ steps.metadata.outputs.unique_name }}.provenance.json results/${{ steps.metadata.outputs.unique_name }}.json
           git commit -m "Submission: ${{ steps.metadata.outputs.unique_name }}
 
-          Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" --allow-empty
           git push origin ${{ steps.metadata.outputs.branch_name }}
           echo "::notice title=Submission Branch Created::Your results are ready for submission on branch: ${{ steps.metadata.outputs.branch_name }}"
 
