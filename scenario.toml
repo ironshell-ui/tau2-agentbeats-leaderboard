@@ -1,4 +1,4 @@
-# run: Tau2-bench v16 — ultra-minimal prompt + JSON mode — 2026-03-08T05:00
+# run: Tau2-bench v17 — Gemini Pro #1 + SOTA prompt — 2026-03-08T07:00
 [green_agent]
 image = "ghcr.io/ironshell-ui/tau2-agentbeats:latest"
 env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}" }
@@ -11,4 +11,4 @@ env = { LOG_LEVEL = "INFO", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_K
 [config]
 domain = "airline"
 user_llm = "openai/gpt-4o-mini"
-run_id = 16
+run_id = 17
