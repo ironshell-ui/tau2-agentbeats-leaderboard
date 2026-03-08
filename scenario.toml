@@ -5,9 +5,9 @@ env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", GEMINI_API_KEY
 
 [[participants]]
 # agentbeats_id = ""
-image = "ghcr.io/rdi-foundation/tau2-purple-agentbeats:latest"
-name = "agent"
-env = { LOG_LEVEL = "INFO", AGENT_LLM = "openai/gpt-4o-mini", OPENAI_API_KEY = "${OPENAI_API_KEY}", GEMINI_API_KEY = "${GEMINI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}" }
+image = "ghcr.io/ironshell-ui/claudecowork-agent:master"
+name = "ironshell-v7-dominion"
+env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY}", MINIMAX_API_KEY = "${MINIMAX_API_KEY}", GROK_API_KEY = "${GROK_API_KEY}", OPENROUTER_API_KEY = "${OPENROUTER_API_KEY}", FEATHERLESS_API_KEY = "${FEATHERLESS_API_KEY}", SERPAPI_KEY = "${SERPAPI_KEY}", GOOGLE_API_KEY = "${GOOGLE_API_KEY}" }
 
 [config]
 domain = "airline"
