@@ -1,4 +1,4 @@
-# IronShell IronForge v3 — τ²-bench airline (run-scenario uses GitHub secrets → .env)
+# IronShell IronForge v3 — τ²-bench airline (Docker-verified via run-scenario workflow)
 [green_agent]
 agentbeats_id = "019b4d06-1da3-7c22-88fa-f4660061a779"
 env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}" }
