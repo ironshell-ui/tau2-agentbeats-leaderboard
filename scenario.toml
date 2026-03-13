@@ -1,12 +1,15 @@
 # IronShell IronForge v3 — τ²-bench airline assessment (94% = 47/50)
+# Only OPENAI_API_KEY is required via Amber interpolation.
+# All other provider keys default to "" in agent.py (os.environ.get with fallback).
+# The engine cascade (GPT-5.4 → DeepSeek → Kimi → etc) gracefully skips missing providers.
 [green_agent]
 agentbeats_id = "019b4d06-1da3-7c22-88fa-f4660061a779"
-env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", GEMINI_API_KEY = "${GEMINI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}" }
+env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 [[participants]]
 agentbeats_id = "019cb5e7-e77e-71b1-82d5-41516465fa92"
 name = "agent"
-env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY}", MINIMAX_API_KEY = "${MINIMAX_API_KEY}", GROK_API_KEY = "${GROK_API_KEY}", OPENROUTER_API_KEY = "${OPENROUTER_API_KEY}", FEATHERLESS_API_KEY = "${FEATHERLESS_API_KEY}", SERPAPI_KEY = "${SERPAPI_KEY}", GOOGLE_API_KEY = "${GOOGLE_API_KEY}" }
+env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 [config]
 domain = "airline"
