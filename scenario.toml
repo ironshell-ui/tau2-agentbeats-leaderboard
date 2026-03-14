@@ -1,16 +1,13 @@
-# run: HARD DEBUG Monte Carlo v4.0 — 2026-03-06T19:00
+# run: IronForge v12.1 — Mega 14-engine probe, benchmark-prioritized — 2026-03-14
 [green_agent]
-# agentbeats_id = ""
-image = "ghcr.io/ironshell-ui/tau2-agentbeats:latest"
-env = { LOG_LEVEL = "INFO", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}" }
+agentbeats_id = "019b4d06-1da3-7c22-88fa-f4660061a779"
+env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 [[participants]]
-agentbeats_id = "ironshell-ui/ironshell"
 name = "agent"
-env = { LOG_LEVEL = "INFO", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY}", MINIMAX_API_KEY = "${MINIMAX_API_KEY}", SERPAPI_KEY = "${SERPAPI_KEY}", OPENROUTER_API_KEY = "${OPENROUTER_API_KEY}", FEATHERLESS_API_KEY = "${FEATHERLESS_API_KEY}" }
+agentbeats_id = "019cb5e7-e77e-71b1-82d5-41516465fa92"
+env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY}", MINIMAX_API_KEY = "${MINIMAX_API_KEY}", OPENROUTER_API_KEY = "${OPENROUTER_API_KEY}", FEATHERLESS_API_KEY = "${FEATHERLESS_API_KEY}", XAI_API_KEY = "${XAI_API_KEY}" }
 
 [config]
 domain = "airline"
-user_llm = "deepseek/deepseek-chat"
-# IronShell Purple Agent submission
-run_id = 6
+user_llm = "openai/gpt-4o-mini"
