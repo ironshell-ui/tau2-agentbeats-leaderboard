@@ -1,0 +1,17 @@
+{
+  "image_digests": {
+    "green-agent": "ghcr.io/rdi-foundation/agentbeats-tutorial-tau2-evaluator@sha256:3b2f863a4717c9c0792228befd1d2f6acf8c9d78d902d1686564320161cc75b1",
+    "agent": "ghcr.io/ironshell-ui/claudecowork-agent@sha256:a2790b3a4be7578e906362a6a0d54013e9439658c02e553be0837b7d743e7dff",
+    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
+  },
+  "timestamp": "2026-03-14T10:21:23Z",
+  "github_actions": {
+    "run_url": "https://github.com/ironshell-ui/tau2-agentbeats-leaderboard/actions/runs/23084976561",
+    "run_logs_url": "https://api.github.com/repos/ironshell-ui/tau2-agentbeats-leaderboard/actions/runs/23084976561/logs",
+    "ref": "refs/heads/submission-ironforge-v7-consensus",
+    "sha": "edc5064221c0a549f589e88226487452d4553f20",
+    "repository_url": "https://github.com/ironshell-ui/tau2-agentbeats-leaderboard",
+    "workflow_ref": "ironshell-ui/tau2-agentbeats-leaderboard/.github/workflows/run-scenario.yml@refs/heads/submission-ironforge-v7-consensus",
+    "workflow_sha": "edc5064221c0a549f589e88226487452d4553f20"
+  }
+}
