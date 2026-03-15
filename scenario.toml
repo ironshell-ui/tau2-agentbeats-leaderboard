@@ -1,7 +1,7 @@
-# run: IronForge v15.1 — Green agent DEEPSEEK_API_KEY fix — 2026-03-15
+# run: IronForge v15.2 — Green agent via OpenRouter (DEEPSEEK key é Featherless!) — 2026-03-15
 [green_agent]
 agentbeats_id = "019b4d06-1da3-7c22-88fa-f4660061a779"
-env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}" }
+env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", OPENROUTER_API_KEY = "${OPENROUTER_API_KEY}" }
 
 [[participants]]
 name = "agent"
@@ -10,4 +10,4 @@ env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_K
 
 [config]
 domain = "airline"
-user_llm = "deepseek/deepseek-chat"
+user_llm = "openrouter/deepseek/deepseek-chat"
