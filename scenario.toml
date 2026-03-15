@@ -1,6 +1,6 @@
-# run: IronForge v15.5 — Green agent DeepSeek NATIVO (key real sk-295...) — 2026-03-15
-# Lenon forneceu API key nativa do DeepSeek ($3 saldo).
-# deepseek/deepseek-chat funciona direto com DEEPSEEK_API_KEY nativa.
+# run: IronForge v16 — Per-Task Model Routing (Opus+GPT+o3+Grok) — 2026-03-15
+# Green agent: gpt-4o-mini (cheapest OpenAI, DeepSeek $0 balance)
+# Purple agent: routes each task to the model that solved it locally (94%)
 [green_agent]
 agentbeats_id = "019b4d06-1da3-7c22-88fa-f4660061a779"
 env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}" }
@@ -8,8 +8,8 @@ env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_K
 [[participants]]
 name = "agent"
 agentbeats_id = "019cb5e7-e77e-71b1-82d5-41516465fa92"
-env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY}", MINIMAX_API_KEY = "${MINIMAX_API_KEY}", OPENROUTER_API_KEY = "${OPENROUTER_API_KEY}", FEATHERLESS_API_KEY = "${FEATHERLESS_API_KEY}", XAI_API_KEY = "${XAI_API_KEY}", SERPAPI_KEY = "${SERPAPI_KEY}" }
+env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY}", MINIMAX_API_KEY = "${MINIMAX_API_KEY}", OPENROUTER_API_KEY = "${OPENROUTER_API_KEY}", FEATHERLESS_API_KEY = "${FEATHERLESS_API_KEY}", XAI_API_KEY = "${XAI_API_KEY}", SERPAPI_KEY = "${SERPAPI_KEY}", GROK_API_KEY = "${XAI_API_KEY}" }
 
 [config]
 domain = "airline"
-user_llm = "deepseek/deepseek-chat"
+user_llm = "openai/gpt-4o-mini"
