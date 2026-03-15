@@ -1,7 +1,10 @@
-# run: IronForge v15.3 — Green agent DeepSeek via Featherless (plano flat-rate) — 2026-03-15
+# run: IronForge v15.4 — Green agent GPT-4o-mini (Featherless 401, OpenRouter sem créditos) — 2026-03-15
+# NOTA: Featherless retorna 401 no green agent. OpenRouter esgotou créditos.
+# Usando openai/gpt-4o-mini (funciona com OPENAI_API_KEY, deu 54% no PR#10).
+# Quando Lenon recarregar OpenRouter ou corrigir Featherless key, trocar de volta.
 [green_agent]
 agentbeats_id = "019b4d06-1da3-7c22-88fa-f4660061a779"
-env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", FEATHERLESS_AI_API_KEY = "${FEATHERLESS_API_KEY}" }
+env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 [[participants]]
 name = "agent"
@@ -10,4 +13,4 @@ env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_K
 
 [config]
 domain = "airline"
-user_llm = "featherless_ai/deepseek-ai/DeepSeek-V3-0324"
+user_llm = "openai/gpt-4o-mini"
