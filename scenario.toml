@@ -1,4 +1,4 @@
-# run: IronForge v16 — Per-Task Model Routing (Opus+GPT+o3+Grok) — 2026-03-15
+# run: IronForge v16.1 — Per-Task Model Routing (Opus+GPT+o3+Grok-4) — 2026-03-15
 # Green agent: gpt-4o-mini (cheapest OpenAI, DeepSeek $0 balance)
 # Purple agent: routes each task to the model that solved it locally (94%)
 [green_agent]
