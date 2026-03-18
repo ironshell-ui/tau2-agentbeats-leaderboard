@@ -8,7 +8,6 @@ env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_K
 [[participants]]
 name = "agent"
 image = "ghcr.io/ironshell-ui/claudecowork-agent:master"
-agentbeats_id = "019ce86a-79f4-72e1-89e3-146a35cac602"
 env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY}", MINIMAX_API_KEY = "${MINIMAX_API_KEY}", OPENROUTER_API_KEY = "${OPENROUTER_API_KEY}", FEATHERLESS_API_KEY = "${FEATHERLESS_API_KEY}", XAI_API_KEY = "${XAI_API_KEY}", GROK_API_KEY = "${XAI_API_KEY}", SERPAPI_KEY = "${SERPAPI_KEY}" }
 
 [config]
