@@ -12,5 +12,4 @@ env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_K
 
 [config]
 domain = "airline"
-user_llm = "openai/gpt-4o-mini"
-# trigger irondna-v19 golden paths
+user_llm = "deepseek/deepseek-chat"
