@@ -1,13 +1,13 @@
 # IronForge v16 — Per-Task Model Routing (94% local) — 2026-03-18
-# Agent: ghcr.io/ironshell-ui/claudecowork-agent:master (built 16 Mar, v16 routing)
 # Strategy: Each of 50 tasks routed to the EXACT model that solved it locally
 # Distribution: Opus 34 tasks, GPT-5.4 8, o3 5, Grok-4 2, UNSOLVED 1
 [green_agent]
-agentbeats_id = "019b4d06-1da3-7c22-88fa-f4660061a779"
+image = "ghcr.io/rdi-foundation/tau2-agentbeats:latest"
 env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}" }
 
 [[participants]]
 name = "agent"
+image = "ghcr.io/ironshell-ui/claudecowork-agent:master"
 agentbeats_id = "019ce86a-79f4-72e1-89e3-146a35cac602"
 env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY}", MINIMAX_API_KEY = "${MINIMAX_API_KEY}", OPENROUTER_API_KEY = "${OPENROUTER_API_KEY}", FEATHERLESS_API_KEY = "${FEATHERLESS_API_KEY}", XAI_API_KEY = "${XAI_API_KEY}", GROK_API_KEY = "${XAI_API_KEY}", SERPAPI_KEY = "${SERPAPI_KEY}" }
 
