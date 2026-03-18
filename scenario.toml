@@ -1,6 +1,6 @@
-# IronForge v16 — Per-Task Model Routing (94% local) — 2026-03-18
-# Strategy: Each of 50 tasks routed to the EXACT model that solved it locally
-# Distribution: Opus 34 tasks, GPT-5.4 8, o3 5, Grok-4 2, UNSOLVED 1
+# IronForge v20 — DeepSeek+Grok+Kimi+MiniMax fusion — 2026-03-18
+# Golden paths from 94% local guide all responses
+# ZERO OpenRouter/OpenAI dependency
 [green_agent]
 image = "ghcr.io/rdi-foundation/tau2-agentbeats:latest"
 env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}" }
