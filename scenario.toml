@@ -14,3 +14,4 @@ env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", DEEPSEEK_API_K
 domain = "airline"
 user_llm = "deepseek/deepseek-chat"
 # v20.1 minimax 1773882285
+# v21 per-turn replay 1773908801
