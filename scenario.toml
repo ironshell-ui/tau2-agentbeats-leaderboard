@@ -5,8 +5,7 @@ env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 [[participants]]
 name = "agent"
 image = "ghcr.io/ironshell-ui/claudecowork-agent:master"
-env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", OPENAI_API_BASE = "http://cli-proxy:8317/v1", DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY}", MINIMAX_API_KEY = "${MINIMAX_API_KEY}", OPENROUTER_API_KEY = "${OPENROUTER_API_KEY}", FEATHERLESS_API_KEY = "${FEATHERLESS_API_KEY}", XAI_API_KEY = "${XAI_API_KEY}", SERPAPI_KEY = "${SERPAPI_KEY}" }
+env = { LOG_LEVEL = "INFO", OPENAI_API_KEY = "${OPENAI_API_KEY}", OPENAI_API_BASE = "${OPENAI_API_BASE}", KIMI_API_KEY = "${KIMI_API_KEY}", MINIMAX_API_KEY = "${MINIMAX_API_KEY}", FEATHERLESS_API_KEY = "${FEATHERLESS_API_KEY}", XAI_API_KEY = "${XAI_API_KEY}", SERPAPI_KEY = "${SERPAPI_KEY}" }
 
 [config]
 domain = "airline"
-user_llm = "openai/claude-sonnet-4-6"
